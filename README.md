@@ -12,6 +12,10 @@ Moreover, the current song title, artist, and cover art is displayed. The previo
 
 In addition, you have pause, play, skip, and stop audio controls that have been created from scratch. They have also been styled to go with the orangered, white and black theme of the app.
 
+## Check it out:
+
+https://sergio-20.github.io/jpop-radio/index.html
+
 
 ## PC
 
