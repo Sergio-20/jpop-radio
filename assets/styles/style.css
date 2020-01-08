@@ -1,0 +1,123 @@
+/* Import Styles */
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+/* HTML Elements */
+
+html, body { scroll-behavior: smooth !important;; }
+
+body {
+  font-family: 'Rubik', sans-serif; 
+  line-height: 1.6; 
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.2; }
+
+p, li {
+  font-size: 24px;
+}
+
+
+/* Classes */
+
+.audio-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.audio-container input { background: none; }
+
+.bg-image {
+  background-image: url("../images/sao.jpg");
+  background-position: center center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur( 1rem );
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.btn {
+  background: #ff4500 !important;
+  border: none;
+  color: #fff !important;
+}
+
+.listeners {
+  background: rgba( 0,0,0,0.6 );
+  border-bottom: 0.2rem solid black;
+  padding: 0.25rem;
+}
+
+.listeners-text { 
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-left: 1.5rem; 
+  margin-top: 0.75rem; 
+}
+
+.song-title-wrapper {
+  display: inline-flex;
+  flex-direction: row;  
+}
+
+.stw-primary, .stw-secondary {
+  font-weight: bold; 
+  margin-right: 0.5rem;
+}
+
+.stw-primary { color: orangered; }
+
+.stw-secondary { color: #ff006e; }
+
+.wrapper {
+  background-color: rgba( 0,0,0, 0.6 );  
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+  max-width: 880px; 
+  margin: 5rem auto; 
+  padding: 1rem;
+  text-align: center;
+}
+
+.wrapper h1 {
+  color: #fff;
+}
+
+.wrapper p {
+  color: #fff;  
+}
+
+.wrapper img {
+  filter: drop-shadow( 0 0 0.75rem #226f54 );
+}
+
+
+/* Pseudo Classes */
+::-moz-range-thumb, ::-webkit-slider-thumb {
+  background: #fff;
+  border-radius: 50%;
+}
+
+::-moz-range-progress, ::-webkit-progress-value {
+  background: orangered;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 760px)
+{
+  .audio-container {
+    display: block;
+    text-align: center;
+  }
+  .audio-container * {
+    margin: 0.2rem auto;
+  }
+}

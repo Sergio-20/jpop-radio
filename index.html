@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Jpop Radio</title>
+  </head>
+  <body>
+
+    <div class="bg-image"></div>
+
+    <div class="listeners">
+      <p class="listeners-text text-light"></p>
+    </div>
+
+    <div class="wrapper">
+      <div class="song-title-wrapper">
+        <p class="stw-primary">Current Song: </p>
+        <h1 id="song-title"></h1>
+      </div>
+      <p id="artist"></p>
+      <img id="song-img" class="img-thumbnail" src="" alt="" />
+
+      <div class="audio-container">
+        <div class="playback-controls">
+          <button class="btn" onclick="skip( 'back' );"><i class="fa fa-fast-backward"></i></button>
+          <button class="btn" onclick="playPause();"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
+          <button class="btn" onclick="stop();"><i class="fa fa-stop"></i></button>
+          <button class="btn" onclick="skip( 'fwd' );"><i class="fa fa-fast-forward"></i></button>
+        </div>
+
+        <div id="song-progressbar">
+          <input id="sp-pos" type="range" oninput="setPost( this.value );" value="0" max="" />
+        </div>
+
+        <div class="volume-controls">
+          <button id="mute" class="btn" onclick="mute();"><i class="fa fa-volume-up"></i></button>
+          <input id="volume" type="range" oninput="setVolume( this.value );" min="0" max="1" step="0.01" value="1" />
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="song-title-wrapper">
+        <p class="stw-secondary">Previous Song: </p>
+        <h1 id="prev-song-title-01"></h1>
+      </div>
+      <p id="prev-artist-01"></p>
+      <img id="prev-song-img-01" class="img-thumbnail" src="" alt="" />
+    </div>
+
+    <div class="wrapper">
+      <div class="song-title-wrapper">
+        <p class="stw-secondary">Previous Song: </p>
+        <h1 id="prev-song-title-02"></h1>
+      </div>
+      <p id="prev-artist-02"></p>
+      <img id="prev-song-img-02" class="img-thumbnail" src="" alt="" />
+    </div>
+
+    <script src="./assets/scripts/websocket.js"></script>
+    <script src="./assets/scripts/audioPlayer.js"></script>
+  </body>  
+</html>
