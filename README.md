@@ -23,12 +23,12 @@ ___
 
 ## Tablet
 
-![イチズ  (武道館Ver.) Tablet View](./assets/images/tablet-01.png "Logo Title")
+![イチズ  (武道館Ver.) Tablet View](./assets/images/tablet-01.jpg "Logo Title")
 
 ___
 
 ## Smartphone
 
-![イチズ  (武道館Ver.) Smartphone View](./assets/images/smartphone-01.png "Logo Title")
+![イチズ  (武道館Ver.) Smartphone View](./assets/images/smartphone-01.jpg "Logo Title")
 
-![イチズ  (武道館Ver.) Smartphone View](./assets/images/smartphone-02.png "Logo Title")
+![イチズ  (武道館Ver.) Smartphone View](./assets/images/smartphone-02.jpg "Logo Title")
